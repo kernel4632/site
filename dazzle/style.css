@@ -1,0 +1,584 @@
+#封面 .标题::after {
+    content: "正在连接服务器";
+    color: #64ffdb;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    -webkit-filter: drop-shadow(0 0 10px rgb(100, 255, 219));
+    filter: drop-shadow(0 0 10px rgb(100, 255, 219));
+}
+
+#进度条 {
+    margin-top: 20px;
+    height: 10px;
+    width: 200px;
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0;
+    height: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    letter-spacing: 0.1rem;
+    font-family: "微软雅黑";
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: 0.2s cubic-bezier(0, 0, 0, 1);
+    -o-transition: 0.2s cubic-bezier(0, 0, 0, 1);
+    transition: 0.2s cubic-bezier(0, 0, 0, 1);
+}
+
+body {
+    background-color: rgb(10, 25, 47);
+    color: rgb(210, 220, 255);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#背景:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    opacity: 0.2;
+    background: url(资源/星空背景.png) center/cover no-repeat;
+}
+
+.background {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#首页 {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 10vw;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+#网名 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#黄块 {
+    font-weight: 100;
+    margin-right: 10px;
+    color: rgb(255, 255, 0);
+    background: rgb(255, 255, 0);
+    -webkit-box-shadow: 0px 0px 5px 1px rgb(255, 255, 0);
+    box-shadow: 0px 0px 5px 1px rgb(255, 255, 0);
+}
+
+
+#介绍 {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+#介绍 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 255, 196);
+    margin: 0;
+}
+
+#介绍 h1 {
+    font-size: 50px;
+    margin: 0;
+    -webkit-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#介绍 h1 span {
+    color: rgb(100, 255, 218);
+    -webkit-filter: drop-shadow(0 0 3px 1px #64ffdb);
+    filter: drop-shadow(0 0 3px 1px #64ffdb);
+}
+
+#介绍 button {
+    font-weight: 600;
+    color: rgb(100, 255, 218);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(100, 255, 218);
+    border-radius: 10px;
+    background-color: #ffffff00;
+    padding: 10px 20px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+#介绍 button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(100, 255, 219, 0.5);
+}
+
+#介绍 button:active {
+    background-color: rgb(100, 255, 218);
+}
+
+#名片 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#头像 {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: url(资源/头像.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.背景 {
+    z-index: -999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-filter: drop-shadow(rgb(100, 255, 219) 0px 0px 10px);
+    filter: drop-shadow(rgb(100, 255, 219) 0px 0px 10px);
+    opacity: 0.7;
+}
+
+#关闭 {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 20px;
+    z-index: 999;
+}
+
+#关闭:active {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.显示 {
+    height: 100%;
+    z-index: 999;
+    opacity: 1;
+}
+
+.隐藏 {
+    height: 0;
+    z-index: -10;
+    opacity: 0;
+}
+
+#详细 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgb(10, 25, 47);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+h4 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.作品卡,
+.友情卡 {
+    font-size: 20px;
+    position: relative;
+    width: 230px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.项目已完成:hover {
+    -webkit-box-shadow: 0 0 10px rgb(100, 255, 218);
+    box-shadow: 0 0 10px rgb(100, 255, 218);
+    -webkit-filter: drop-shadow(0 0 10px #64ffdb);
+    filter: drop-shadow(0 0 10px #64ffdb);
+}
+
+.项目制作中:hover {
+    -webkit-box-shadow: 0 0 10px #ffff00;
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    -webkit-filter: drop-shadow(0 0 5px rgb(255, 255, 0));
+    filter: drop-shadow(0 0 5px rgb(255, 255, 0));
+}
+
+.友情卡:hover {
+    -webkit-box-shadow: 0 0 10px rgb(61, 255, 210);
+    box-shadow: 0 0 10px rgb(61, 255, 210);
+    -webkit-filter: drop-shadow(0 0 5px #64ffdb);
+    filter: drop-shadow(0 0 5px #64ffdb);
+}
+
+#作品 {
+    max-width: 600px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+#作品页 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.底部线条 {
+    width: 90px;
+    height: 4px;
+    background-color: rgb(100, 255, 218);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.作品卡 img {
+    font-size: 20px;
+    color: rgb(88, 166, 255);
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 400;
+    height: 70px;
+    width: 70px;
+    -webkit-filter: drop-shadow(rgba(100, 255, 219, 0.243) 0px 0px 5px);
+    filter: drop-shadow(rgba(100, 255, 219, 0.243) 0px 0px 5px);
+    margin: 5px;
+}
+
+.作品卡 .作品名 {
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    color: rgb(100, 255, 218);
+    font-weight: bold;
+    margin: 0px;
+}
+
+.作品卡 .简介 {
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    max-width: 200px;
+    margin: 6px 0px 20px;
+}
+
+.已完成::after {
+    content: "已完成";
+    font-size: 10px;
+    color: rgb(100, 255, 218);
+    background-color: rgba(100, 255, 219, 0.216);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.制作中::after {
+    content: "制作中";
+    font-size: 10px;
+    color: rgb(255, 255, 0);
+    background-color: rgba(255, 255, 0, 0.208);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+#友情链接 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#链接 {
+    max-width: 600px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.友情卡 img {
+    font-size: 20px;
+    color: rgb(88, 166, 255);
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 400;
+    height: 70px;
+    width: 70px;
+    -webkit-filter: drop-shadow(rgb(100, 255, 219) 0px 0px 5px);
+    filter: drop-shadow(rgb(100, 255, 219) 0px 0px 5px);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.友情卡 .名字 {
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    color: rgb(100, 255, 218);
+    font-weight: bold;
+    margin: 0px;
+}
+
+.友情卡 .简介 {
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    max-width: 200px;
+    margin: 6px 0px 20px;
+}
+
+#封面 {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(10, 25, 47);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+#封面 svg {
+    width: 300px;
+    height: 300px;
+    -webkit-filter: drop-shadow(0 0 10px rgb(100, 255, 219));
+    filter: drop-shadow(0 0 10px rgb(100, 255, 219));
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+@media (min-width: 500px) {
+    #右位移 {
+        padding-right: 10vw;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+}
+
+

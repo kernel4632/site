@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+:root {
+    --主题色: #f29799;
+    --基础字体大小: 1vw;
+}
+@media (max-width: 1700px) {
+    :root {
+        --基础字体大小: 15px;
+    }
+}
+@media (max-width: 1200px) {
+    :root {
+        --基础字体大小: 12px;
+    }
+}
+@media (max-width:900px) {
+    :root {
+        --基础字体大小: 10px;
+    }
+}
+@media (max-width: 600px) {
+    :root {
+        --基础字体大小: 7px;
+    }
+}
+@media (max-width: 400px) {
+    :root {
+        --基础字体大小: 5px;
+    }
+}
+@media (max-width: 300px) {
+    :root {
+        --基础字体大小: 3px;
+    }
+}
+
+
+body {
+    color: var(--主题色);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+#首页 thank::after {
+    content: "热爱你来过的每度温暖";
+    font-size: calc(var(--基础字体大小) * 5);
+    font-weight: bold;
+}
+
+#首页 welcome::after {
+    content: "你好，欢迎来到我的网站";
+    font-size: calc(var(--基础字体大小) * 2);
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    color: var(--主题色);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: var(--主题色);
+}

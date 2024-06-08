@@ -1,0 +1,293 @@
+:root {
+    --主题色: #4197ff;
+    --阴影: 0 0px 20px rgba(0, 132, 255, 0.2);
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-family: '鸿蒙', '微软雅黑', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+      background-color: #ffffff;
+}
+
+* {
+    -webkit-transition: 0.4s cubic-bezier(0.2, 0.84, 0, 1);
+    -o-transition: 0.4s cubic-bezier(0.2, 0.84, 0, 1);
+    transition: 0.4s cubic-bezier(0.2, 0.84, 0, 1);
+    font-weight: bold;
+    letter-spacing: 1px;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*::-moz-selection {
+    background: var(--主题色);
+    color: #fff;
+}
+
+*::selection {
+    background: var(--主题色);
+    color: #fff;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.隐藏 {
+    visibility: hidden;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+.显示 {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 30px 0;
+}
+
+.横线 {
+    width: 50px;
+    height: 5px;
+    background-color: var(--主题色);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.头像 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    -webkit-filter: drop-shadow(var(--阴影));
+    filter: drop-shadow(var(--阴影));
+}
+
+#项目 .头像 {
+    border-radius: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--主题色);
+}
+
+button {
+    color: #fff;
+    border: none;
+    -webkit-box-shadow: var(--阴影);
+    box-shadow: var(--阴影);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 50px;
+    margin: 15px 0px;
+    width: 200px;
+    background-color: var(--主题色);
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+button:hover {
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+}
+
+button:active {
+    scale: 0.95;
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.按钮1 {
+    background-color: var(--主题色);
+    color: #fff;
+}
+
+.按钮2 {
+    background-color: white;
+    color: var(--主题色);
+}
+
+.icon {
+    width: 40px;
+    margin-right: 10px;
+    fill: var(--主题色);
+    -webkit-backdrop-filter: drop-shadow(0 0 10px var(--主题色));
+    backdrop-filter: drop-shadow(0 0 10px var(--主题色));
+}
+
+.联系方式 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 5px 20px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    font-size: 30px;
+}
+
+
+.卡片 {
+    padding: 30px 20px;
+    margin: 25px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+
+    -webkit-box-shadow: var(--阴影);
+
+    box-shadow: var(--阴影);
+    background-color: rgb(255, 255, 255);
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    word-break: break-all;
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+
+
+.卡片:hover {
+    -webkit-filter: brightness(1.02);
+    filter: brightness(1.02);
+    -webkit-box-shadow: 0 0 5px var(--主题色);
+    box-shadow: 0 0 5px var(--主题色);
+}
+
+.卡片:active {
+    scale: 0.95;
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+#项目,
+#链接 {
+    padding: 0 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#标签 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#标签 span {
+    -webkit-box-shadow: var(--阴影);
+    box-shadow: 0 0px 15px rgba(0, 132, 255, 0.2);
+    padding: 8px 15px;
+    margin: 10px 15px;
+    border-radius: 10px;
+}
